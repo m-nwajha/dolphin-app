@@ -1,0 +1,254 @@
+﻿/*body*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: #ff8b33;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #37a9f3;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff8b33;
+  border-radius: 10px;
+}
+
+body {
+  background: none;
+  font-family: 'Almarai';
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+}
+
+a:hover {
+  color: #ff8b33 !important;
+  transition: all 0.5s;
+}
+
+/*text_color*/
+.text-grey-light {
+  color: #e0e0e2 !important;
+}
+
+.text-grey-dark {
+  color: #707070 !important;
+}
+
+.text-blue {
+  color: #37a9f3 !important;
+}
+
+.text-orange {
+  color: #ff8b33 !important;
+}
+
+/*background*/
+.bg-grey-light {
+  background: #e0e0e2 !important;
+}
+
+.bg-grey-dark {
+  background: #707070 !important;
+}
+
+.bg-blue {
+  background: #37a9f3 !important;
+}
+
+.bg-orange {
+  background: #ff8b33 !important;
+}
+
+.bg-blue-gradient {
+  background-image: linear-gradient(140deg, #37a9f3 30%, #0e496e 100%) !important;
+}
+
+.bg-orange-gradient {
+  background-image: linear-gradient(180deg, #ff8b33 0%, #b56906 100%) !important;
+}
+
+/*border*/
+.bd-grey-light {
+  border-color: #e0e0e2 !important;
+}
+
+.bd-grey-dark {
+  border-color: #707070 !important;
+}
+
+.bd-blue {
+  border-color: #37a9f3 !important;
+}
+
+.bd-orange {
+  border-color: #ff8b33 !important;
+}
+
+.btn-focus {
+  color: #37a9f3 !important;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+}
+
+.btn-focus:focus {
+  color: #ff8b33 !important;
+  transition: all 0.5s;
+}
+
+.dropdown-menu.show {
+  display: contents;
+}
+
+.form-control:focus {
+  color: #F39233;
+  border-color: #F39233;
+  transition: all 0.5s;
+}
+.breadcrumb-item::before {
+  color: #fff !important;
+}
+.rtl .breadcrumb-item::before {
+  float: right;
+  padding-left: 10px;
+}
+
+.btn-blue {
+  height: 50px;
+  width: 200px;
+  padding: 0 20px 0 20px;
+  border: none;
+  font-size: 16px;
+  color: #fff !important;
+  background-color: #37a9f3 !important;
+  border-radius: 4px;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+}
+
+.btn-blue:hover {
+  color: #37a9f3 !important;
+  background-color: #fff !important;
+  border: #37a9f3 solid 1px !important;
+  transition: all 0.5s;
+}
+
+.btn-out-blue {
+  display: block;
+  border: none;
+  font-size: 16px;
+  color: #37a9f3 !important;
+  background-color: #fff !important;
+  border: #37a9f3 solid 1px !important;
+  border-radius: 4px;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+}
+
+.btn-out-blue:hover {
+  color: #fff !important;
+  background-color: #37a9f3 !important;
+  transition: all 0.5s;
+}
+
+
+
+
+.thumbnail_images ul {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 10px
+}
+
+.thumbnail_images ul li {
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #eee;
+  cursor: pointer;
+  transition: all 0.5s
+}
+
+.thumbnail_images ul li:hover {
+  border: 2px solid #37a9f3
+}
+
+.main_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  height: 400px;
+  width: 100%;
+  overflow: hidden
+}
+
+.img-text {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.img-text .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%) !important;
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 17px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
